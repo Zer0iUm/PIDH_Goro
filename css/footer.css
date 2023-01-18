@@ -1,0 +1,78 @@
+footer {
+  background-color: #f3f0eb;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  font-family: "Lato";
+  color: #000000;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 4rem;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer li {
+  margin-top: 0.5rem;
+}
+
+footer h5 {
+  font-weight: 900;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer__inst {
+  text-align: left;
+}
+
+.footer__legal {
+  text-align: left;
+}
+
+.footer__redes {
+  margin-top: 3rem;
+}
+
+.footer__lista {
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__item {
+  margin-right: 1rem;
+}
+
+.footer__busca {
+  text-align: left;
+}
+
+.busca__input {
+  width: 100%;
+}
+
+footer input {
+  margin-top: 1rem;
+  border: 2px solid #000000;
+  width: 60%;
+  padding: 1rem;
+  background-color: #f3f0eb;
+  margin-right: 0;
+}
+
+footer button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  margin-left: 0;
+  cursor: pointer;
+}
