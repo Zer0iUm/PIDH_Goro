@@ -26,6 +26,8 @@
   font-size: 25px;
   border-bottom: solid;
   padding-bottom: 2rem;
+  text-align: left;
+  font-weight: 900;
 }
 
 li {
