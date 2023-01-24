@@ -1,0 +1,126 @@
+header {
+	background-image: linear-gradient(
+		to right,
+		rgb(234, 228, 220),
+		rgb(239, 235, 228)
+	);
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 15px;
+}
+
+nav ul.nav-principal {
+	display: flex;
+	justify-content: space-between;
+	width: 50vw;
+}
+
+nav ul.nav-principal li {
+	display: inline-block;
+	align-self: flex-end;
+}
+
+.nav--link {
+	color: #000000;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.nav--link:hover {
+	color: #ffffff;
+	background-color: #000000;
+	padding: 0.5rem 0rem;
+	border-radius: 5px;
+	opacity: 0.7;
+}
+
+nav ul.nav-icones {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 10px;
+	position: relative;
+	left: 10em;
+}
+
+nav ul.nav-icones li {
+	align-self: flex-end;
+}
+
+nav ul.nav-icones i {
+	font-size: 15pt;
+}
+
+/***********SLIDE***********/
+
+section.carousel {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 2rem;
+	margin-top: 8rem;
+}
+
+#img-banner {
+	position: relative;
+	left: -100px;
+}
+
+div.carousel-text {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	align-self: center;
+	position: relative;
+	left: -180px;
+	top: -35px;
+}
+
+div.carousel-text h6 {
+	font-size: 20px;
+	margin: 0;
+	font-weight: normal;
+}
+
+div.carousel-text h1 {
+	margin: 0;
+	font-size: 60px;
+}
+
+div.carousel-text p {
+	font-size: 20px;
+}
+
+div.carousel-text button {
+	margin-top: 2rem;
+}
+
+i.carousel-arrow {
+	align-self: center;
+	font-size: 3rem;
+	position: relative;
+}
+
+#arrow-left {
+	transform: rotate(-90deg);
+}
+
+#arrow-right {
+	transform: rotate(90deg);
+	margin-right: 4rem;
+}
+
+@media (max-width: 1366px) {
+	#img-banner {
+		left: 0;
+	}
+	div.carousel-text {
+		left: 0;
+	}
+}

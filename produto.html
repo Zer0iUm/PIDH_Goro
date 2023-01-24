@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Goró Loja</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./css/reset.css" rel="stylesheet" />
+		<link href="./css/cabecalho.css" rel="stylesheet" />
+		<link href="./css/footer.css" rel="stylesheet" />
+		<link href="./css/busca.css" rel="stylesheet" />
+		<link href="./css/pagina-produto.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://kit.fontawesome.com/8efdacdf0c.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="menu">
+				<a class="menu__link" href="./index.html"
+					><img
+						class="logo"
+						alt="Logo Goró"
+						src="./img/logo goro 1.png"
+					/>
+				</a>
+				<ul class="menu__lista">
+					<li class="menu__item">
+						<a class="menu__linka" href="#">CERVEJAS</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__linka" href="#">ACESSÓRIOS</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__linka" href="#">KITS</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="redes">
+				<ul class="menu__lista">
+					<li class="menu__item">
+						<a class="menu__link" href="#"
+							><img
+								class="redes__logo"
+								alt="Instagram"
+								src="./img/Instagram.png"
+						/></a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#"
+							><img
+								class="redes__logo"
+								alt="YouTube"
+								src="./img/YouTube.png"
+						/></a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#"
+							><img
+								class="redes__logo"
+								alt="Facebook"
+								src="./img/Facebook.png"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="pesquisa">
+			<div class="pesquisa__container">
+				<input
+					class="pesquisa__input"
+					type="search"
+					placeholder="Buscar no site"
+				/>
+			</div>
+		</section>
+
+		<main>
+			<div id="produto">
+				<section id="img-produto">
+					<div id="produto-mini">
+						<img alt="Pequeno 1" src="./img/brown.png" />
+						<img alt="Pequeno 2" src="./img/double.png" />
+						<img
+							alt="Pequeno 3"
+							src="./img/american pale ale.png"
+						/>
+					</div>
+					<img alt="Imagem principal" src="./img/brown.png" />
+				</section>
+				<section id="info-produto">
+					<h1>Goró - Brown Ale</h1>
+					<h2>Cerveja - 000 ML</h2>
+					<p>
+						Descrição do produto: Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Ut aliquet tempor risus.
+					</p>
+					<table id="info-tabela">
+						<tr>
+							<th>% de álcool</th>
+							<th>IBU</th>
+							<th>Tipo de copo</th>
+						</tr>
+						<tr>
+							<td>00%</td>
+							<td>00</td>
+							<td>Taça</td>
+						</tr>
+					</table>
+					<hr />
+					<div id="rating">
+						<i class="fa-solid fa-star" id="rating-1"></i>
+						<i class="fa-solid fa-star" id="rating-2"></i>
+						<i class="fa-solid fa-star" id="rating-3"></i>
+						<i class="fa-solid fa-star" id="rating-4"></i>
+						<i class="fa-solid fa-star" id="rating-5"></i>
+					</div>
+					<h3>R$ 00,00</h3>
+					<section id="quantidade">
+						<div class="btn-quantidade" id="remover">-</div>
+						<input
+							id="input-quantidade"
+							type="tel"
+							value="0"
+							min="0"
+						/>
+						<div class="btn-quantidade" id="adicionar">+</div>
+						<button>COMPRAR</button>
+					</section>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
