@@ -52,13 +52,15 @@ td {
 
 #info-tabela th {
 	font-size: 15px;
-	font-weight: 700;
 	text-align: center;
+	line-height: 18px;
+	padding-bottom: 1rem;
 }
 
 #info-tabela td {
 	font-size: 20px;
 	font-weight: 700;
+	line-height: 24px;
 	text-align: center;
 }
 
@@ -82,7 +84,7 @@ td {
 	margin-bottom: 2rem;
 }
 
-#quantidade {
+#compra {
 	display: flex;
 	flex-direction: row;
 }
@@ -98,10 +100,24 @@ td {
 .btn-quantidade:hover {
 	background-color: rgb(60, 60, 60);
 	cursor: pointer;
+	user-select: none;
 }
 
 #input-quantidade {
-	width: 5rem;
+	width: 4.5rem;
 	font-size: 20px;
 	text-align: center;
+}
+
+#compra button {
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	border: none;
+	margin-left: 2rem;
+	padding: 0 1rem;
+}
+
+#compra button:hover {
+	background-color: rgb(60, 60, 60);
 }

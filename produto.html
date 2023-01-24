@@ -21,6 +21,7 @@
 			src="https://kit.fontawesome.com/8efdacdf0c.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="./script.js"></script>
 	</head>
 	<body>
 		<header class="cabecalho">
@@ -125,16 +126,28 @@
 						<i class="fa-solid fa-star" id="rating-4"></i>
 						<i class="fa-solid fa-star" id="rating-5"></i>
 					</div>
-					<h3>R$ 00,00</h3>
-					<section id="quantidade">
-						<div class="btn-quantidade" id="remover">-</div>
+					<h3 id="valorTotal">R$ 10,00</h3>
+					<section id="compra">
+						<div
+							class="btn-quantidade"
+							id="remover"
+							onclick="setQuantidade('remove')"
+						>
+							-
+						</div>
 						<input
 							id="input-quantidade"
-							type="tel"
+							type="text"
 							value="0"
 							min="0"
 						/>
-						<div class="btn-quantidade" id="adicionar">+</div>
+						<div
+							class="btn-quantidade"
+							id="adicionar"
+							onclick="setQuantidade('add')"
+						>
+							+
+						</div>
 						<button>COMPRAR</button>
 					</section>
 				</section>

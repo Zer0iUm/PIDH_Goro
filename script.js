@@ -16,3 +16,18 @@ function changeInfo(info) {
 		document.getElementById('show--info2').classList.remove('show--info');
 	}
 }
+
+/**********PRODUTO**************/
+
+function setQuantidade(input) {
+	let valor = document.getElementById('input-quantidade').value;
+	if (input === 'remove') {
+		valor <= 0 ? (valor = 0) : valor--;
+		document.getElementById('input-quantidade').value = valor;
+	} else if (input === 'add') {
+		valor++;
+		document.getElementById('input-quantidade').value = valor;
+	}
+	total = document.getElementById('valorTotal').textContent;
+	console.log(total);
+}
