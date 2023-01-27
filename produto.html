@@ -91,14 +91,30 @@
 			<div id="produto">
 				<section id="img-produto">
 					<div id="produto-mini">
-						<img alt="Pequeno 1" src="./img/brown.png" />
-						<img alt="Pequeno 2" src="./img/double.png" />
+						<img
+							alt="Pequeno 1"
+							src="./img/brown.png"
+							onclick="changeImage('./img/brown.png'); clickedImage('img-mini-1')"
+							id="img-mini-1"
+						/>
+						<img
+							alt="Pequeno 2"
+							src="./img/double.png"
+							onclick="changeImage('./img/double.png'); clickedImage('img-mini-2')"
+							id="img-mini-2"
+						/>
 						<img
 							alt="Pequeno 3"
 							src="./img/american pale ale.png"
+							onclick="changeImage('./img/american pale ale.png'); clickedImage('img-mini-3')"
+							id="img-mini-3"
 						/>
 					</div>
-					<img alt="Imagem principal" src="./img/brown.png" />
+					<img
+						alt="Imagem principal"
+						src="./img/brown.png"
+						id="display"
+					/>
 				</section>
 				<section id="info-produto">
 					<h1>Goró - Brown Ale</h1>
