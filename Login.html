@@ -18,7 +18,7 @@
 	<link href="./css/produtos.css" rel="stylesheet" />
 	<link href="./css/footer.css" rel="stylesheet" />
 	<link href="./css/busca.css" rel="stylesheet" />
-	<link href="./css/login-form.css rel="stylesheet" />
+	<link href="./css/login-form.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -53,16 +53,22 @@
 		</nav>
 	</header>
 
+	<section class="pesquisa">
+		<div class="pesquisa__container">
+			<input class="pesquisa__input" type="search" placeholder="Buscar no site" />
+		</div>
+	</section>
+
 	<section class="form">
 		<form class="form__login">
 			<h2 class="form__titulo">Faça o seu login</h2>
 			<h3 class="form__subtitulo">Conecte-se para finalizar a compra</h3>
 			<input type="email" placeholder="E-mail">
 			<input type="password" placeholder="Senha">
-			<p>Esqueci a minha senha</p>
-			<span class="for__erro">Mensagem de erro</span>
+			<a href="#" class="esqueci__senha">Esqueci a minha senha</a>
+			<span class="form__erro">Mensagem de erro</span>
 			<button class="form__button">ENTRAR</button>
-			<p>Primeira vez por aqui? <a href='#'>Crie uma conta</a></p>
+			<p>Primeira vez por aqui? <a href='#' class="">Crie uma conta</a></p>
 		</form>
 	</section>
 
