@@ -33,7 +33,12 @@
 					</li>
 					<li><a class="nav--link" href="#about">SOBRE NÓS</a></li>
 					<li>
-						<a class="nav--link" href="./home-loja.html">LOJA</a>
+						<a
+							class="nav--link"
+							href="./home-loja.html"
+							target="_blank"
+							>LOJA</a
+						>
 					</li>
 				</ul>
 				<ul class="nav-icones">
@@ -54,15 +59,93 @@
 					</li>
 				</ul>
 			</nav>
+		</header>
 
-			<section class="carousel">
+		<section class="carrossel">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div>
+							<img
+								class="slide-marca"
+								src="./img/banner topo 1.png"
+								alt="banner"
+							/>
+						</div>
+						<div class="conteudo">
+							<p class="conteudo-um">CATEGORIA</p>
+							<h2>LOREM IPSUM</h2>
+							<p class="conteudo-dois">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing <br />
+								elit. In sed ipsum tempor, fermentum lorem
+								pellentesque, luctus tortor.
+							</p>
+							<a href="#">BOTÃO</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<img
+								class="slide-marca"
+								src="./img/banner topo 1.png"
+								alt="banner"
+							/>
+						</div>
+						<div class="conteudo">
+							<p class="conteudo-um">CATEGORIA</p>
+							<h2>LOREM IPSUM</h2>
+							<p class="conteudo-dois">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. In sed ipsum tempor, fermentum
+								lorem pellentesque, luctus tortor.
+							</p>
+							<a href="#">BOTÃO</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<img
+								class="slide-marca"
+								src="./img/banner topo 1.png"
+								alt="banner"
+							/>
+						</div>
+						<div class="conteudo">
+							<p class="conteudo-um">CATEGORIA</p>
+							<h2>LOREM IPSUM</h2>
+							<p class="conteudo-dois">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. In sed ipsum tempor, fermentum
+								lorem pellentesque, luctus tortor.
+							</p>
+							<a href="#">BOTÃO</a>
+						</div>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+				<!-- <div class="swiper-scrollbar"></div> -->
+			</div>
+		</section>
+
+		<!-- <section class="carousel">
 				<i
 					class="fa-solid fa-angle-up carousel-arrow"
 					id="arrow-left"
 				></i>
 				<img
 					alt="banner"
-					src="./img/goro-cerveja.png"
+					src="./img/banner topo 1.png"
 					id="img-banner"
 				/>
 				<div class="carousel-text conteudo">
@@ -79,84 +162,80 @@
 					class="fa-solid fa-angle-up carousel-arrow"
 					id="arrow-right"
 				></i>
-			</section>
+			</section> -->
 
-			<section id="info--menu">
-				<div class="btn--menu">
-					<button
-						class="btn--info"
-						id="title--info1"
-						onclick="changeInfo('show--info1')"
-					>
-						AMERICAN PALE ALE
-					</button>
-					<button
-						class="btn--info"
-						id="title--info2"
-						onclick="changeInfo('show--info2')"
-					>
-						DOUBLE IPA
-					</button>
-					<button
-						class="btn--info"
-						id="title--info3"
-						onclick="changeInfo('show--info3')"
-					>
-						BROWN ALE
-					</button>
-				</div>
-				<div id="show--info1" hidden>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nunc posuere nisl sit amet erat sodales, ut dictum purus
-						posuere. Pellentesque aliquam faucibus pharetra.
-						Pellentesque eget efficitur sem. Suspendisse ut elit id
-						mauris blandit ultrices. Cras ultricies nisi ut luctus
-						aliquam. Nunc semper, mauris a lobortis rutrum, tortor
-						velit dapibus quam, a scelerisque est tortor ut eros.
-						Duis lectus augue, ultrices vel urna pharetra,
-						consectetur aliquet tellus.
-					</p>
-					<img
-						alt="info 1"
-						src="./img/american pale ale.png"
-						class="img--info"
-					/>
-				</div>
-				<div id="show--info2" class="show--info" hidden>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nunc posuere nisl sit amet erat sodales, ut dictum purus
-						posuere. Pellentesque aliquam faucibus pharetra.
-						Pellentesque eget efficitur sem. Suspendisse ut elit id
-						mauris blandit ultrices. Cras ultricies nisi ut luctus
-						aliquam. Nunc semper, mauris a lobortis rutrum, tortor
-						velit dapibus quam, a scelerisque est tortor ut eros.
-						Duis lectus augue, ultrices vel urna pharetra,
-						consectetur aliquet tellus.
-					</p>
-					<img
-						alt="info 2"
-						src="./img/double.png"
-						class="img--info"
-					/>
-				</div>
-				<div id="show--info3" hidden>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nunc posuere nisl sit amet erat sodales, ut dictum purus
-						posuere. Pellentesque aliquam faucibus pharetra.
-						Pellentesque eget efficitur sem. Suspendisse ut elit id
-						mauris blandit ultrices. Cras ultricies nisi ut luctus
-						aliquam. Nunc semper, mauris a lobortis rutrum, tortor
-						velit dapibus quam, a scelerisque est tortor ut eros.
-						Duis lectus augue, ultrices vel urna pharetra,
-						consectetur aliquet tellus.
-					</p>
-					<img alt="info 3" src="./img/brown.png" class="img--info" />
-				</div>
-			</section>
-		</header>
+		<section id="info--menu">
+			<div class="btn--menu">
+				<button
+					class="btn--info"
+					id="title--info1"
+					onclick="changeInfo('show--info1')"
+				>
+					AMERICAN PALE ALE
+				</button>
+				<button
+					class="btn--info"
+					id="title--info2"
+					onclick="changeInfo('show--info2')"
+				>
+					DOUBLE IPA
+				</button>
+				<button
+					class="btn--info"
+					id="title--info3"
+					onclick="changeInfo('show--info3')"
+				>
+					BROWN ALE
+				</button>
+			</div>
+			<div id="show--info1" hidden>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Nunc posuere nisl sit amet erat sodales, ut dictum purus
+					posuere. Pellentesque aliquam faucibus pharetra.
+					Pellentesque eget efficitur sem. Suspendisse ut elit id
+					mauris blandit ultrices. Cras ultricies nisi ut luctus
+					aliquam. Nunc semper, mauris a lobortis rutrum, tortor velit
+					dapibus quam, a scelerisque est tortor ut eros. Duis lectus
+					augue, ultrices vel urna pharetra, consectetur aliquet
+					tellus.
+				</p>
+				<img
+					alt="info 1"
+					src="./img/american pale ale.png"
+					class="img--info"
+				/>
+			</div>
+			<div id="show--info2" class="show--info" hidden>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Nunc posuere nisl sit amet erat sodales, ut dictum purus
+					posuere. Pellentesque aliquam faucibus pharetra.
+					Pellentesque eget efficitur sem. Suspendisse ut elit id
+					mauris blandit ultrices. Cras ultricies nisi ut luctus
+					aliquam. Nunc semper, mauris a lobortis rutrum, tortor velit
+					dapibus quam, a scelerisque est tortor ut eros. Duis lectus
+					augue, ultrices vel urna pharetra, consectetur aliquet
+					tellus.
+				</p>
+				<img alt="info 2" src="./img/double.png" class="img--info" />
+			</div>
+			<div id="show--info3" hidden>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Nunc posuere nisl sit amet erat sodales, ut dictum purus
+					posuere. Pellentesque aliquam faucibus pharetra.
+					Pellentesque eget efficitur sem. Suspendisse ut elit id
+					mauris blandit ultrices. Cras ultricies nisi ut luctus
+					aliquam. Nunc semper, mauris a lobortis rutrum, tortor velit
+					dapibus quam, a scelerisque est tortor ut eros. Duis lectus
+					augue, ultrices vel urna pharetra, consectetur aliquet
+					tellus.
+				</p>
+				<img alt="info 3" src="./img/brown.png" class="img--info" />
+			</div>
+		</section>
+
 		<main>
 			<section id="about">
 				<h2>SOBRE NÓS</h2>
