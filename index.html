@@ -369,5 +369,17 @@
 				0 - Cidade, ES
 			</p>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper('.swiper', {
+				speed: 400,
+				spaceBetween: 10,
+				slidesPerView: 1,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+				},
+			});
+		</script>
 	</body>
 </html>
