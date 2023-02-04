@@ -63,16 +63,15 @@ nav ul.nav-icones i {
 
 /***********SLIDE***********/
 
-/* section.carousel {
+section.carousel {
 	display: flex;
 	width: 100%;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 2rem;
 }
 
 #img-banner img {
-	position: relative;
+	position: absolute;
 	width: 100%;
 }
 
@@ -108,7 +107,7 @@ div.carousel-text button {
 i.carousel-arrow {
 	align-self: center;
 	font-size: 3rem;
-	position: relative;
+	position: absolute;
 }
 
 #arrow-left {
@@ -117,7 +116,7 @@ i.carousel-arrow {
 
 #arrow-right {
 	transform: rotate(90deg);
-	margin-right: 4rem;
+	left: 98%;
 }
 
 @media (max-width: 1366px) {
@@ -127,9 +126,4 @@ i.carousel-arrow {
 	div.carousel-text {
 		left: 0;
 	}
-} */
-
-.carrossel img {
-	margin-top: -150px;
-	position: relative;
 }
