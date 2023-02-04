@@ -68,3 +68,84 @@
   display: inline-block;
   border-radius: 5%;
 }
+
+/*=============== Responsividade =============*/
+@media (max-width: 630px) {
+  .swiper-slide img{
+    width: 100%;
+  }
+  .conteudo {
+    width: 40%;
+    font-family: "Lato";
+    position: absolute;
+    text-align: left;
+  }
+  .conteudo-um {
+    font-size: 18px;
+  }
+
+  .conteudo h2 {
+    font-weight: 900;
+    font-size: 25px;
+    margin: auto;
+    padding-top: 1rem;
+  }
+  
+  .conteudo-dois {
+    font-size: 14px;
+    word-break: inherit;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .conteudo a {
+    font-size: 9px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.4rem 0.4rem;
+    cursor: pointer;
+
+  }
+ 
+}
+
+@media (max-width: 350px) {
+  .swiper-slide img{
+    width: 100%;
+  }
+  .conteudo {
+    width: 40%;
+    font-family: "Lato";
+    position: absolute;
+    text-align: left;
+    top: 30%;
+    right: 1%;
+  }
+  .conteudo-um {
+    font-size: 13px;
+  }
+
+  .conteudo h2 {
+    font-weight: 700;
+    font-size: 13px;
+    margin: auto;
+    padding-top: 0.5rem;
+  }
+  
+  .conteudo-dois {
+    font-size: 14px;
+    word-break: inherit;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .conteudo a {
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+
+  }
+ 
+}
