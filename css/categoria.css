@@ -25,7 +25,6 @@
   cursor: pointer;
   font-weight: 900;
   font-size: 30px;
-
   transition: 0.3ms;
   text-decoration: none;
   margin-top: 4rem;
@@ -63,4 +62,100 @@
   color: #ffffff;
   background-color: #bd2d16;
   border-radius: 50px 0px 50px 50px;
+}
+/*=============== Responsividade =============*/
+@media (max-width: 360px) {
+  .categoria__container {
+    flex-direction: column;
+  }
+
+  .categoria {
+    padding-top: 1rem;
+  }
+  
+  .categoria h3 {
+    font-size: 15x;
+    border-bottom: solid;
+    text-align: center;
+    font-weight: 900;
+  }
+  
+  .categoria a {
+    width: 350px;
+    height: 350px;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3ms;
+    margin-top: 1rem;
+  }
+  
+  .categoria a:hover {
+    opacity: 0.7;
+  }
+
+  .categoria a img{
+    width:250px;
+    height: 250px;
+  }
+  
+  .categoria h4 {
+    text-align: center;
+  }
+  
+  .categoria img {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: center;  
+ 
+}
+
+}
+
+@media (max-width: 630px) {
+    .categoria__container {
+      flex-direction: column;
+    }
+
+    .categoria {
+      padding-top: 0.5rem;
+    }
+    
+    .categoria h3 {
+      font-size: 12x;
+      border-bottom: solid;
+      text-align: left;
+      font-weight: 700;
+    }
+    
+    .categoria a {
+      width: 250px;
+      height: 250px;
+      margin: 0 1rem;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 12px;
+      transition: 0.4ms;
+      margin-top: 1rem;
+    }
+    
+    .categoria a:hover {
+      opacity: 0.5;
+    }
+
+    .categoria a img{
+      width:120px;
+      height: 120px;
+    }
+    
+    .categoria h4 {
+      text-align: center;
+    }
+    
+    .categoria img {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      text-align: center;  
+  
+  }
 }

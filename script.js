@@ -43,3 +43,13 @@ function clickedImage(id) {
 
 	document.getElementById(id).style.opacity = 0.5;
 }
+
+
+/**********RESPONSIVIDADE MENU E MENU-BAR**************/
+const menu_bar= document.querySelector('.menu-bar');
+const NavMenu = document.querySelector('.nav_menu');
+
+menu_bar.addEventListener('click', () =>{
+	menu_bar.classList.toggle('ativo');
+	NavMenu.classList.toggle('ativo')
+})
