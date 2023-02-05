@@ -12,10 +12,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-.logo {
-	width: 10rem;
-}
-
 .btn-geral {
 	font-size: 14pt;
 	width: 11rem;
@@ -30,14 +26,17 @@ html {
 	background-color: #606060;
 }
 
-/* .conteudo a {
-	background-color: #000000;
-	color: #ffffff;
-	padding: 0.5rem 1rem;
-	cursor: pointer;
-	text-decoration: none;
+/*****ajeitando footer da home marca******/
+
+.footer__redes {
+	text-align: center !important;
+	margin-top: 3rem;
+	margin-right: 20px;
 }
 
-.conteudo a:hover {
-	padding: 0.7rem 1.2rem;
-} */
+.footer__lista {
+	margin-top: 1rem;
+	display: flex;
+	align-items: flex-start;
+	margin-right: 15px;
+}
