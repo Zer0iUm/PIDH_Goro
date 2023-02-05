@@ -49,6 +49,7 @@ footer a:hover {
 	text-decoration: underline;
 }
 
+
 .footer__inst {
 	text-align: left;
 }
@@ -62,11 +63,11 @@ footer a:hover {
 	margin-top: 3rem;
 }
 
-/* .footer__lista {
+.footer__lista {
 	margin-top: 1rem;
 	display: flex;
 	align-items: flex-start;
-} */
+}
 
 .footer__item {
 	margin-right: 1rem;
@@ -163,9 +164,7 @@ footer button {
 			cursor: pointer;
 		}
 
-			.footer__logo img{
-
-			}
+			
 
 			footer p{
 				padding-top: 10px;

@@ -58,6 +58,10 @@
   display: none;
 }
 
+.cabecalho__flex{
+  display: flex;
+}
+
 .menu-bar .bar{
   display: block;
   width: 28px;

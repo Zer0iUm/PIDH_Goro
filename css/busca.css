@@ -2,7 +2,7 @@
   background: #000000;
   color: var(--branco);
   text-align: center;
-  padding: 0.9em 2em;
+  padding: 0.4em 2em;
 }
 
 .pesquisa__input {
@@ -11,7 +11,7 @@
   color: #000000;
   border-radius: 24px;
   padding: 0.9rem;
-  width: 50%;
+  width: 84%;
   padding-left: 2rem;
 }
 
