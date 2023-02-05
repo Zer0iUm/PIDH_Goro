@@ -1,8 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
 header {
 	background-image: linear-gradient(
 		to right,
-		rgb(234, 228, 220),
-		rgb(239, 235, 228)
+		rgb(237, 232, 225),
+		rgb(244, 241, 237)
 	);
 }
 
@@ -11,6 +15,7 @@ nav {
 	flex-direction: row;
 	justify-content: center;
 	padding-top: 15px;
+	z-index: 1;
 }
 
 nav ul.nav-principal {
@@ -33,7 +38,7 @@ nav ul.nav-principal li {
 .nav--link:hover {
 	color: #ffffff;
 	background-color: #000000;
-	padding: 0.5rem 0rem;
+	padding: 0.5rem 1rem;
 	border-radius: 5px;
 	opacity: 0.7;
 }
@@ -63,13 +68,11 @@ section.carousel {
 	width: 100%;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 2rem;
-	margin-top: 8rem;
 }
 
-#img-banner {
-	position: relative;
-	left: -100px;
+#img-banner img {
+	position: absolute;
+	width: 100%;
 }
 
 div.carousel-text {
@@ -104,7 +107,7 @@ div.carousel-text button {
 i.carousel-arrow {
 	align-self: center;
 	font-size: 3rem;
-	position: relative;
+	position: absolute;
 }
 
 #arrow-left {
@@ -113,7 +116,7 @@ i.carousel-arrow {
 
 #arrow-right {
 	transform: rotate(90deg);
-	margin-right: 4rem;
+	left: 98%;
 }
 
 @media (max-width: 1366px) {
