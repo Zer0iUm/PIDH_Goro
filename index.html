@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Goró</title>
 		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/header-marca.css" />
 		<link rel="stylesheet" href="./css/banner.css" />
+		<link rel="stylesheet" href="./css/header-marca.css" />
 		<link rel="stylesheet" href="./css/portifolio.css" />
 		<link rel="stylesheet" href="./css/about.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
@@ -61,24 +61,58 @@
 			</nav>
 		</header>
 
-		<section class="carousel">
-			<i class="fa-solid fa-angle-up carousel-arrow" id="arrow-left"></i>
-			<img alt="banner" src="./img/banner topo 1.png" id="img-banner" />
-			<div class="carousel-text conteudo">
-				<h6>CATEGORIA</h6>
-				<h1>LOREM IPSUM</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-					sed ipsum tempor, fermentum lorem pellentesque, luctus
-					tortor.
-				</p>
-				<button class="btn-geral">BOTÃO</button>
-			</div>
-			<i class="fa-solid fa-angle-up carousel-arrow" id="arrow-right"></i>
-			<div class="slide-indicators">
-				<img src="./img/slide-indicator-active.png" />
-				<img src="./img/slide-indicator.png" />
-				<img src="./img/slide-indicator.png" />
+		<section class="carrossel">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div>
+							<img src="./img/banner topo 1.png" alt="banner" />
+						</div>
+						<div class="conteudo">
+							<p class="conteudo-um">CATEGORIA</p>
+							<h2>LOREM IPSUM</h2>
+							<p class="conteudo-dois">
+								Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit.sed ipsum tempor, fermentum<br />
+								lorem pellentesque,luctus tortor.
+							</p>
+							<a href="#">VER CAMISETAS</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<img src="./img/banner topo 1.png" alt="banner" />
+						</div>
+						<div class="conteudo">
+							<p class="conteudo-um">CATEGORIA</p>
+							<h2>LOREM IPSUM</h2>
+							<p class="conteudo-dois">
+								Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit.sed ipsum tempor, fermentum<br />
+								lorem pellentesque,luctus tortor.
+							</p>
+							<a href="#">VER CAMISETAS</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<img src="./img/banner topo 1.png" alt="banner" />
+						</div>
+						<div class="conteudo">
+							<p class="conteudo-um">CATEGORIA</p>
+							<h2>LOREM IPSUM</h2>
+							<p class="conteudo-dois">
+								Lorem ipsum dolor sit amet, consectetur<br />
+								adipiscing elit.sed ipsum tempor, fermentum<br />
+								lorem pellentesque,luctus tortor.
+							</p>
+							<a href="#">VER CAMISETAS</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 		</section>
 

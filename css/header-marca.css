@@ -36,6 +36,7 @@ nav ul.nav-principal li {
 	color: #000000;
 	text-decoration: none;
 	transition: 0.3s;
+	display: block;
 }
 
 .nav--link:hover {
@@ -66,10 +67,13 @@ nav ul.nav-icones i {
 
 /***********SLIDE***********/
 
-section.carousel {
+.carrossel img {
+	margin-top: -200px;
+}
+
+/* section.carousel {
 	display: flex;
 	width: 100%;
-	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -136,4 +140,4 @@ i.carousel-arrow {
 		transform: rotate(90deg);
 		left: 96%;
 	}
-}
+} */
