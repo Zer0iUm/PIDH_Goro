@@ -89,7 +89,7 @@ li {
 }
 
 .produtos__botao:hover {
-  padding: 0.7rem 1.7rem;
+  background-color: #606060;
 }
 
 hr {
@@ -107,4 +107,33 @@ hr {
 
 .preto {
   border-top: 6px solid #1e0202;
+}
+
+/*=============== Responsividade =============*/
+@media (max-width: 360px) {
+  .produtos h3 {
+    margin-top: 1rem;
+    font-size: 15px;
+    border-bottom: solid;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .produtos__botao {
+    font-size: 15px;
+  }
+}
+@media (max-width: 630px) {
+  .produtos h3 {
+    margin-top: 1rem;
+    font-size: 18px;
+    border-bottom: solid;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .produtos__botao {
+    font-size: 10px;
+    padding: 0.5rem;
+  }
 }
