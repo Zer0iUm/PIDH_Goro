@@ -113,4 +113,5 @@
   cursor: pointer;
   text-decoration: none;
   transition: 15ms;
+  margin: 1rem;
 }
