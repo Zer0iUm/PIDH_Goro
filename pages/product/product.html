@@ -11,37 +11,43 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="./css/reset.css" rel="stylesheet" />
-		<link href="./css/pagina-produto.css" rel="stylesheet" />
+		<link href="../../src/css/reset.css" rel="stylesheet" />
+		<link href="../../src/css/pagina-produto.css" rel="stylesheet" />
 		<script
 			src="https://kit.fontawesome.com/8efdacdf0c.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="./script.js"></script>
+		<script src="../../script.js"></script>
 	</head>
 	<body>
 		<header class="cabecalho">
 			<nav class="menu">
-				<a class="menu__link" href="./home-loja.html"
+				<a class="menu__link" href="../homeStore/homeStore.html"
 					><img
 						class="logo"
 						alt="Logo Goró"
-						src="./img/logo goro 1.png"
+						src="../../src/img/logo goro 1.png"
 					/>
 				</a>
 				<ul class="menu__lista">
 					<li class="menu__item">
-						<a class="menu__linka" href="./Lista-de-Produtos---Cerveja-master/index.html">CERVEJAS</a>
+						<a
+							class="menu__linka"
+							href="../lists/listBeers/listBeer.html"
+							>CERVEJAS</a
+						>
 					</li>
 					<li class="menu__item">
 						<a
 							class="menu__linka"
-							href="./Lista - Acessórios/index.html"
+							href="../lists/listAcessories/index.html"
 							>ACESSÓRIOS</a
 						>
 					</li>
 					<li class="menu__item">
-						<a class="menu__linka" href="./Lista - Kits/index.html"
+						<a
+							class="menu__linka"
+							href="../lists/listKits/index.html"
 							>KITS</a
 						>
 					</li>
@@ -51,26 +57,32 @@
 			<nav class="redes">
 				<ul class="menu__lista">
 					<li class="menu__item">
-						<a class="menu__link" href="./Login.html"
+						<a class="menu__link" href="../login/Login.html"
 							><img
 								class="redes__logo"
 								alt="Login"
-								src="./img/login.svg"
+								src="../../src/img/login.svg"
 							/>
 							LOGIN
 						</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="./carrinho de compras.html"
+						<a class="menu__link" href="../signUp/signUp.html"
 							><img
 								class="redes__logo"
 								alt="Carrinho"
-								src="./img/carrinho.svg"
+								src="../../src/img/carrinho.svg"
 							/>
 							CARRINHO
 						</a>
 					</li>
 				</ul>
+
+				<div class="menu-bar">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 			</nav>
 		</header>
 
@@ -90,26 +102,26 @@
 					<div id="produto-mini">
 						<img
 							alt="Pequeno 1"
-							src="./img/brown.png"
+							src="../../src/img/brown.png"
 							onclick="changeImage('./img/brown.png'); clickedImage('img-mini-1')"
 							id="img-mini-1"
 						/>
 						<img
 							alt="Pequeno 2"
-							src="./img/double.png"
+							src="../../src/img/double.png"
 							onclick="changeImage('./img/double.png'); clickedImage('img-mini-2')"
 							id="img-mini-2"
 						/>
 						<img
 							alt="Pequeno 3"
-							src="./img/american pale ale.png"
+							src="../../src/img/american pale ale.png"
 							onclick="changeImage('./img/american pale ale.png'); clickedImage('img-mini-3')"
 							id="img-mini-3"
 						/>
 					</div>
 					<img
 						alt="Imagem principal"
-						src="./img/brown.png"
+						src="../../src/img/brown.png"
 						id="display"
 					/>
 				</section>
@@ -135,14 +147,30 @@
 					<hr />
 					<div id="rating">
 						<img
-							src="./img/star-active.png"
+							src="../../src/img/star-active.png"
 							alt="star 1"
 							id="rating-1"
 						/>
-						<img src="./img/star.png" alt="star 2" id="rating-2" />
-						<img src="./img/star.png" alt="star 3" id="rating-3" />
-						<img src="./img/star.png" alt="star 4" id="rating-4" />
-						<img src="./img/star.png" alt="star 5" id="rating-5" />
+						<img
+							src="../../src/img/star.png"
+							alt="star 2"
+							id="rating-2"
+						/>
+						<img
+							src="../../src/img/star.png"
+							alt="star 3"
+							id="rating-3"
+						/>
+						<img
+							src="../../src/img/star.png"
+							alt="star 4"
+							id="rating-4"
+						/>
+						<img
+							src="../../src/img/star.png"
+							alt="star 5"
+							id="rating-5"
+						/>
 					</div>
 					<h3 id="valorTotal">R$ 00,00</h3>
 					<section id="compra">
@@ -179,11 +207,11 @@
 				<section class="comentario">
 					<h3>Nome Sobrenome</h3>
 					<div class="rating-user">
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
 					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -193,43 +221,55 @@
 						porta metus non malesuada aliquet.
 					</p>
 					<div class="rating-comentario">
-						<img alt="thumbs up" src="./img/like-active.png" />
+						<img
+							alt="thumbs up"
+							src="../../src/img/like-active.png"
+						/>
 						<div class="likes">1</div>
-						<img alt="thumbs down" src="./img/dislike.png" />
+						<img
+							alt="thumbs down"
+							src="../../src/img/dislike.png"
+						/>
 						<div class="dislikes"></div>
 					</div>
 					<h3>Nome Sobrenome</h3>
 					<div class="rating-user">
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
 					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</p>
 					<div class="rating-comentario">
-						<img alt="thumbs up" src="./img/like.png" />
+						<img alt="thumbs up" src="../../src/img/like.png" />
 						<div class="likes"></div>
-						<img alt="thumbs down" src="./img/dislike-active.png" />
+						<img
+							alt="thumbs down"
+							src="../../src/img/dislike-active.png"
+						/>
 						<div class="dislikes">1</div>
 					</div>
 					<h3>Nome Sobrenome</h3>
 					<div class="rating-user">
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
-						<img src="./img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
+						<img src="../../src/img/star.png" />
 					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					</p>
 					<div class="rating-comentario">
-						<img alt="thumbs up" src="./img/like.png" />
+						<img alt="thumbs up" src="../../src/img/like.png" />
 						<div class="likes"></div>
-						<img alt="thumbs down" src="./img/dislike.png" />
+						<img
+							alt="thumbs down"
+							src="../../src/img/dislike.png"
+						/>
 						<div class="dislikes"></div>
 					</div>
 				</section>
@@ -244,14 +284,14 @@
 							<div class="produto__img">
 								<img
 									class="foto"
-									src="./img/PRODUTOSKIT 1.png"
+									src="../../src/img/PRODUTOSKIT 1.png"
 									alt="banner"
 								/>
 								<div class="icone">
 									<a href="#"
 										><img
 											class="icone"
-											src="./img/sacola.png"
+											src="../../src/img/sacola.png"
 											alt="banner"
 									/></a>
 								</div>
@@ -270,14 +310,14 @@
 							<div class="produto__img">
 								<img
 									class="foto"
-									src="./img/PRODUTOSKIT 1.png"
+									src="../../src/img/PRODUTOSKIT 1.png"
 									alt="banner"
 								/>
 								<div class="icone">
 									<a href="#"
 										><img
 											class="icone"
-											src="./img/sacola.png"
+											src="../../src/img/sacola.png"
 											alt="banner"
 									/></a>
 								</div>
@@ -296,14 +336,14 @@
 							<div class="produto__img">
 								<img
 									class="foto"
-									src="./img/PRODUTOSKIT 1.png"
+									src="../../src/img/PRODUTOSKIT 1.png"
 									alt="banner"
 								/>
 								<div class="icone">
 									<a href="#"
 										><img
 											class="icone"
-											src="./img/sacola.png"
+											src="../../src/img/sacola.png"
 											alt="banner"
 									/></a>
 								</div>
@@ -322,14 +362,14 @@
 							<div class="produto__img">
 								<img
 									class="foto"
-									src="./img/PRODUTOSKIT 1.png"
+									src="../../src/img/PRODUTOSKIT 1.png"
 									alt="banner"
 								/>
 								<div class="icone">
 									<a href="#"
 										><img
 											class="icone"
-											src="./img/sacola.png"
+											src="../../src/img/sacola.png"
 											alt="banner"
 									/></a>
 								</div>
@@ -356,7 +396,7 @@
 					<img
 						class="logo"
 						alt="Logo Goró"
-						src="./img/logo goro 1.png"
+						src="../../src/img/logo goro 1.png"
 					/>
 				</div>
 
@@ -364,19 +404,21 @@
 					<ul>
 						<h5>INSTITUCIONAL</h5>
 						<li>
-							<a href="./index.html"> Home </a>
+							<a href="../../index.html"> Home </a>
 						</li>
 						<li>
-							<a href="./index.html#info--menu"> Portfólio </a>
+							<a href="../../index.html#info--menu">
+								Portfólio
+							</a>
 						</li>
 						<li>
 							<a href="#"> Contato </a>
 						</li>
 						<li>
-							<a href="./index.html#about"> Sobre nós </a>
+							<a href="../../index.html#about"> Sobre nós </a>
 						</li>
 						<li>
-							<a href="./home-loja.html"> loja </a>
+							<a href="../homeStore/homeStore.html"> loja </a>
 						</li>
 					</ul>
 				</div>
@@ -400,7 +442,7 @@
 									><img
 										class="redes__logo"
 										alt="Instagram"
-										src="./img/Instagram.png"
+										src="../../src/img/Instagram.png"
 								/></a>
 							</li>
 							<li class="footer__item">
@@ -408,7 +450,7 @@
 									><img
 										class="redes__logo"
 										alt="YouTube"
-										src="./img/YouTube.png"
+										src="../../src/img/YouTube.png"
 								/></a>
 							</li>
 							<li class="footer__item">
@@ -416,7 +458,7 @@
 									><img
 										class="redes__logo"
 										alt="Facebook"
-										src="./img/Facebook.png"
+										src="../../src/img/Facebook.png"
 								/></a>
 							</li>
 						</ul>

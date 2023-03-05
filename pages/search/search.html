@@ -11,66 +11,91 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lato:wght@400;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/style_Result_Busca.css" />
-
+		<link rel="stylesheet" href="../../src/css/style_Result_Busca.css" />
+		<link href="../../src/css/cabecalho.css" rel="stylesheet" />
+		<link href="../../src/css/footer.css" rel="stylesheet" />
+		<link href="../../src/css/busca.css" rel="stylesheet" />
 		<title>Lista de produtos - resultado de busca</title>
 	</head>
 
 	<body>
 		<header class="cabecalho">
 			<nav class="menu">
-				<a class="img-logo" href="#">
-					<img src="./img/logo goro 1.png" alt="logotipo" />
+				<a class="menu__link" href="../homeStore/homeStore.html"
+					><img
+						class="logo"
+						alt="Logo Goró"
+						src="../../src/img/logo goro 1.png"
+					/>
 				</a>
-				<ul class="menu_lista">
-					<li>
+				<ul class="menu__lista">
+					<li class="menu__item">
 						<a
-							href="./Lista-de-Produtos---Cerveja-master/index.html"
+							class="menu__linka"
+							href="../lists/listBeers/listBeer.html"
 							>CERVEJAS</a
 						>
 					</li>
-					<li>
-						<a href="./Lista - Acessórios/index.html">ACESSÓRIOS</a>
+					<li class="menu__item">
+						<a
+							class="menu__linka"
+							href="../lists/listAcessories/index.html"
+							>ACESSÓRIOS</a
+						>
 					</li>
-					<li><a href="./Lista - Kits/index.html">KITS</a></li>
+					<li class="menu__item">
+						<a
+							class="menu__linka"
+							href="../lists/listKits/index.html"
+							>KITS</a
+						>
+					</li>
 				</ul>
 			</nav>
 
-			<nav class="usuario">
-				<ul class="usuario_lista">
-					<li>
-						<a href="./Login.html">
-							<img
-								class="login"
-								src="./img/Login.png"
-								alt="perfil"
-							/>LOGIN
+			<nav class="redes">
+				<ul class="menu__lista">
+					<li class="menu__item">
+						<a class="menu__link" href="../login/Login.html"
+							><img
+								class="redes__logo"
+								alt="Login"
+								src="../../src/img/login.svg"
+							/>
+							LOGIN
 						</a>
 					</li>
-					<li>
-						<a href="./carrinho de compras.html">
-							<img
-								src="./img/carrinho.png"
-								alt="carrinho"
-							/>CARRINHO
+					<li class="menu__item">
+						<a class="menu__link" href="../signUp/signUp.html"
+							><img
+								class="redes__logo"
+								alt="Carrinho"
+								src="../../src/img/carrinho.svg"
+							/>
+							CARRINHO
 						</a>
 					</li>
 				</ul>
+
+				<div class="menu-bar">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 			</nav>
 		</header>
 
-		<main>
-			<div class="barra_pesquisa">
+		<section class="pesquisa">
+			<div class="pesquisa__container">
 				<input
-					class="pesquisa_input"
+					class="pesquisa__input"
 					type="search"
 					placeholder="Buscar no site"
 				/>
-				<a href="./index_result_Busca.html">
-					<img class="lupa" src="./img/lupa.png" alt="lupa" />
-				</a>
 			</div>
+		</section>
 
+		<main>
 			<div class="filtro_container-completo">
 				<div class="filtros">
 					<h2 class="filtro">Filtros</h2>
@@ -181,14 +206,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -202,14 +227,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -223,14 +248,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -244,14 +269,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -264,14 +289,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -284,14 +309,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -304,14 +329,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -324,14 +349,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -344,14 +369,14 @@
 						<div class="item-cerveja">
 							<img
 								class="foto"
-								src="./img/PRODUTOSKIT 1.png"
+								src="../../src/img/PRODUTOSKIT 1.png"
 								alt="imagem-cerveja"
 							/>
 							<div class="item-sacola">
-								<a href="./carrinho de compras.html">
+								<a href="../shoppingCart/shoppingCart.html">
 									<img
 										class="sacola"
-										src="./img/sacola.png"
+										src="../../src/img/sacola.png"
 										alt="imagem-sacola"
 									/>
 								</a>
@@ -364,7 +389,7 @@
 
 					<button class="verMaisProdutos" type="button">
 						<p>
-							<a href="./carrinho de compras.html"
+							<a href="../shoppingCart/shoppingCart.html"
 								>VER MAIS PRODUTOS</a
 							>
 						</p>
@@ -373,85 +398,100 @@
 			</div>
 		</main>
 
-		<hr class="linha-amarela" />
-		<hr class="linha-vermelha" />
-		<hr class="linha-preta" />
+		<hr class="amarelo" />
+		<hr class="vermelho" />
+		<hr class="preto" />
 
 		<footer>
-			<div class="lista-logo">
-				<a href="./home-loja.html">
+			<div class="footer__container">
+				<div class="footer__logo">
 					<img
-						class="img-logo"
-						src="./img/logo goro 1.png"
-						alt="logo"
+						class="logo"
+						alt="Logo Goró"
+						src="../../src/img/logo goro 1.png"
 					/>
-				</a>
-				<ul class="institucional">
-					<li class="titulo-institucional">INSTITUCIONAL</li>
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./index.html#info--menu">Portfólio</a></li>
-					<li><a href="#">Contato</a></li>
-					<li><a href="./index.html#about">Sobre nós</a></li>
-					<li><a href="./home-loja.html">Loja</a></li>
-				</ul>
+				</div>
 
-				<div class="footer-legal-redes">
-					<ul class="legal">
-						<li class="titulo-legal">LEGAL</li>
-						<li class="termos"><a href="#">Termos de uso</a></li>
-						<li class="politica">
-							<a href="#">Política de privacidade</a>
+				<div class="footer__inst">
+					<ul>
+						<h5>INSTITUCIONAL</h5>
+						<li>
+							<a href="../../index.html"> Home </a>
+						</li>
+						<li>
+							<a href="../../index.html#info--menu">
+								Portfólio
+							</a>
+						</li>
+						<li>
+							<a href="#"> Contato </a>
+						</li>
+						<li>
+							<a href="../../index.html#about"> Sobre nós </a>
+						</li>
+						<li>
+							<a href="../homeStore/homeStore.html"> loja </a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__legal">
+					<ul>
+						<h5>LEGAL</h5>
+						<li>
+							<a href="#"> Termos de uso </a>
+						</li>
+						<li>
+							<a href="#"> Política de privacidade </a>
 						</li>
 					</ul>
 
-					<div class="titulo-redes"><p>REDES SOCIAIS</p></div>
-					<div class="redes-sociais">
-						<a
-							class="Instagram"
-							href="www.instagram.com"
-							target="_blank"
-							><img
-								src="./img/Instagram.png"
-								alt="logo-instagram"
-						/></a>
-						<a
-							class="youtube"
-							href="www.youtube.com"
-							target="_blank"
-							><img src="./img/YouTube.png" alt="logo-youtube"
-						/></a>
-						<a
-							class="facebook"
-							href="www.facebook.com"
-							target="_blank"
-							><img src="./img/Facebook.png" alt="logo-facebook"
-						/></a>
+					<div class="footer__redes">
+						<h5>REDES SOCIAIS</h5>
+						<ul class="footer__lista">
+							<li class="footer__item">
+								<a class="footer__link" href="#"
+									><img
+										class="redes__logo"
+										alt="Instagram"
+										src="../../src/img/Instagram.png"
+								/></a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#"
+									><img
+										class="redes__logo"
+										alt="YouTube"
+										src="../../src/img/YouTube.png"
+								/></a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#"
+									><img
+										class="redes__logo"
+										alt="Facebook"
+										src="../../src/img/Facebook.png"
+								/></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="newsletter">
-					<div class="texto_newsletter">
-						<p>
-							Inscreva-se na nossa Newsletter e receba as nossas
-							novidades em primeira mão.
-						</p>
-					</div>
-					<div class="busca_input">
-						<input
-							class="input_news"
-							type="text"
-							id="seu-email"
-							placeholder="SEU E-MAIL"
-						/>
-						<button class="inscrever">
-							<label for="seu-email">INSCREVER-SE</label>
-						</button>
+				<div class="footer__busca">
+					<p>
+						Inscreva-se na nossa Newsletter e receba as nossas
+						novidades em primeira mão.
+					</p>
+					<div class="busca__input">
+						<input type="text" placeholder="SEU E-MAIL" />
+						<button>INSCREVER-SE</button>
 					</div>
 				</div>
 			</div>
-			<p class="cnpj">
-				©️ 2022 CERVEJARIA GORÓ LTDA. 00.000.000/0001-00 | Rua dos
-				Bobos, 0 - Cidade, ES
+
+			<p>
+				© 2022 CERVEJARIA GORÓ LTDA. 00.000.000/0001-00 | Rua dos Bobos,
+				0 - Cidade, ES
 			</p>
 		</footer>
 	</body>
