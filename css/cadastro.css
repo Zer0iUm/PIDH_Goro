@@ -30,6 +30,14 @@
   gap: 1rem;
 }
 
+.teste.vazio {
+  border: 1px solid transparent;
+}
+
+input:disabled {
+  background: #ffffff;
+}
+
 .cadastro__container {
   text-align: center;
   display: inline-table;

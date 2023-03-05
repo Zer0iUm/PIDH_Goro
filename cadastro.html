@@ -85,8 +85,8 @@
 
 		<form class="form">
 			<div class="teste">
-				<input type="nome" placeholder="Nome">
-				<input type="sobrenome" placeholder="Sobrenome">
+				<input type="nome" placeholder="Nome" id="nome">
+				<input type="sobrenome" placeholder="Sobrenome" id="sobrenome">
 			</div>
 			<div class="teste">
 				<input type="dataNascimento" placeholder="Data de Nascimento | 00/00/0000">
@@ -118,18 +118,18 @@
 
 		<form class="form">
 			<div class="teste">
-				<input type="email" placeholder="E-mail">
+				<input type="email" placeholder="E-mail" id="email">
 				<input type="emailConfirmar" placeholder="Confirme seu e-mail">
 			</div>
 			<div class="teste">
-				<input type="senha" placeholder="Senha">
+				<input type="senha" placeholder="Senha" id="senha">
 				<input type="senhaConfirmar" placeholder="Confirme sua senha">
 			</div>
 		</form>
 
 	</section>
 
-	<section class="section__cadastro">
+	<section class="section__cadastro" style="margin-bottom: 4.5rem;">
 
 		<div class="cadastro">
 			<div class="cadastro__titulo">
@@ -147,6 +147,7 @@
 		<form class="form">
 			<div class="teste">
 				<input type="cep" placeholder="CEP | 00000-000">
+				<input class="teste vazio" aria-hidden="true" disabled="disabled">
 			</div>
 			<div class="teste">
 				<input type="cidade" placeholder="Cidade">
@@ -161,8 +162,10 @@
 				<input type="bairro" placeholder="Bairro">
 			</div>
 		</form>
-		<a class="cadastro__botao" href="#">CRIAR CONTA</a>
-	</section>
+			<div class="teste">
+				<a class="cadastro__botao" href="#">CRIAR CONTA</a>
+			</div>
+			</section>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script>
@@ -255,6 +258,8 @@
 			0 - Cidade, ES
 		</p>
 	</footer>
+
+	<script src="cadastro.js"></script>
 </body>
 
 </html>
