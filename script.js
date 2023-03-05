@@ -66,7 +66,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-/***********MENU HOME-LOJA*****************/
+/***********MENU OVER HOME-LOJA*****************/
 
 const menuOne = document.getElementById('menuOne')
 const menuTwo = document.getElementById('menuTwo')
@@ -108,3 +108,5 @@ const mouseOverMenuFive = () => {
 const mouseOutMenuFive = () => {
   menuFive.style.textDecoration = 'none'
 }
+
+
