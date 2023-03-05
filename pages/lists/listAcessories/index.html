@@ -12,6 +12,9 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link href="./reset.css" rel="stylesheet" />
+    <link href="../../../src/css/cabecalho.css" rel="stylesheet" />
+    <link href="../../../src/css/footer.css" rel="stylesheet" />
+    <link href="../../../src/css/busca.css" rel="stylesheet" />
     <title>Lista de Produtos - Cerveja</title>
   </head>
 
@@ -19,54 +22,84 @@
     <div class="container">
       <header class="cabecalho">
         <nav class="menu">
-          <a class="img--logo" href="../home-loja.html">
-            <img class="logo" src="./Imagens/logo goro 1.png" alt="logotipo" />
+          <a class="menu__link" href="../../homeStore/homeStore.html"
+            ><img
+              class="logo"
+              alt="Logo Goró"
+              src="../../../src/img/logo goro 1.png"
+            />
           </a>
-          <ul class="menu--lista">
-            <li><a href="../Lista-de-Produtos---Cerveja-master/index.html">CERVEJAS</a></li>
-            <li><a href="../Lista - Acessórios/index.html">ACESSÓRIOS</a></li>
-            <li><a href="../Lista - Kits/index.html">KITS</a></li>
+          <ul class="menu__lista">
+            <li class="menu__item">
+              <a
+                class="menu__linka"
+                href="../listBeers/listBeer.html"
+                >CERVEJAS</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__linka"
+                href="../listAcessories/index.html"
+                >ACESSÓRIOS</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__linka"
+                href="../listKits/index.html"
+                >KITS</a
+              >
+            </li>
           </ul>
         </nav>
-
-        <nav class="usuario">
-          <ul class="usuario--lista">
-            <li>
-              <a href="../Login.html"
+  
+        <nav class="redes">
+          <ul class="menu__lista">
+            <li class="menu__item">
+              <a class="menu__link" href="../../login/Login.html"
                 ><img
-                  class="login"
-                  src="./Imagens/login.png"
-                  alt="perfil"
-                />LOGIN</a
-              >
+                  class="redes__logo"
+                  alt="Login"
+                  src="../../../src/img/login.svg"
+                />
+                LOGIN
+              </a>
             </li>
-            <li>
-              <a href="../carrinho de compras.html"
+            <li class="menu__item">
+              <a class="menu__link" href="../../signUp/signUp.html"
                 ><img
-                  class="carrinho"
-                  src="./Imagens/carrinho.png"
-                  alt="carrinho"
-                />CARRINHO</a
-              >
+                  class="redes__logo"
+                  alt="Carrinho"
+                  src="../../../src/img/carrinho.svg"
+                />
+                CARRINHO
+              </a>
             </li>
           </ul>
+  
+          <div class="menu-bar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
       </header>
-
-      <main>
-        <div class="fundo--barra--busca">
+  
+      <section class="pesquisa">
+        <div class="pesquisa__container">
           <input
-            type="text"
-            class="barra--busca"
+            class="pesquisa__input"
+            type="search"
             placeholder="Buscar no site"
           />
-          <a href="#"
-            ><img class="lupa" src="./Imagens/Lupa.png" alt="lupa"
-          /></a>
         </div>
+      </section>
+
+      <main>
 
         <div class="banner">
-          <img src="./Imagens/banner_kits.png" alt="banner" />
+          <img src="./Imagens/banner goró 1.png" alt="banner" />
         </div>
 
         <div class="filtro--cerveja--completo">
@@ -74,27 +107,37 @@
 
             <h2 class="filtro">Filtros</h2>
             <hr class="linha--filtro">
-            <h3 class="produto">Qtde de Produtos</h3>
+            <h3 class="produto">Produto</h3>
 
             <section>
-              <div class="prod2">
+              <div class="camiseta">
                 <input
                   type="checkbox"
-                  id="prod2"
-                  name="prod2"
+                  id="camiseta"
+                  name="camiseta"
                   checked
                 />
-                <label for="prod2">2 Podutos</label>
+                <label for="camiseta">Camiseta</label>
               </div>
 
-              <div class="prod3">
-                <input type="checkbox" id="prod3" name="prod3" />
-                <label for="prod3">3 Produtos</label>
+              <div class="copo">
+                <input type="checkbox" id="copo" name="copo" />
+                <label for="copo">Copo</label>
               </div>
 
-              <div class="prod4">
-                <input type="checkbox" id="prod4" name="prod4" />
-                <label for="prod4">4 Produtos</label>
+              <div class="termicos">
+                <input type="checkbox" id="termicos" name="termicos" />
+                <label for="termicos">Térmicos</label>
+              </div>
+
+              <div class="abridor">
+                <input type="checkbox" id="abridor" name="abridor" />
+                <label for="abridor">Abridor de Cerveja</label>
+              </div>
+
+              <div class="balde">
+                <input type="checkbox" id="balde" name="balde" />
+                <label for="balde">Balde</label>
               </div>
 
             </section>
@@ -115,9 +158,9 @@
 
           </div>
 
-          <section class="container--kits">
-            <h1 class="kits"><span>KITS</span></h1>
-            <hr class="linha--kits" />
+          <section class="container--acessorios">
+            <h1 class="acessorios"><span>ACESSÓRIOS</span></h1>
+            <hr class="linha--acessorios" />
 
             <div class="container--produtos">
               <div class="item">
@@ -308,68 +351,102 @@
         </div>
       </main>
       
-      <footer>
-        <hr class="linha--amarela">
-        <hr class="linha--vermelha">
-        <hr class="linha--preta">
-        
-        <div class="lista--logo">
+    <hr class="amarelo" />
+		<hr class="vermelho" />
+		<hr class="preto" />
 
-          <a href="">
-            <img class="img--logo" src="./Imagens/logo goro 1.png" alt="logo" />
-          </a>
-          
-          <ul class="institucional">
-            <li class="negrito">INSTITUCIONAL</li>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html#info--menu">Portifólio</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="../index.html#about">Sobre nós</a></li>
-            <li><a href="../home-loja.html">Loja</a></li>
-          </ul>
-          
-          
-          <div class="redes--sociais">
+		<footer>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img
+						class="logo"
+						alt="Logo Goró"
+						src="../../../src/img/logo goro 1.png"
+					/>
+				</div>
 
-            <ul class="legal">
-              <li class="titulo--legal">LEGAL</li>
-              <li class="termos"><a href="#">Termos de uso</a></li>
-              <li class="politica"><a href="#">Política de privacidade</a></li>
-            </ul>
-            
-            <div class="titulo--redes"><p>REDES SOCIAIS</p></div>
-            <div class="redes">
-              <a class="instagra" href="www.instagram.com" target="_blank"><img src="./Imagens/Instagram - Negative.png" alt="logo instagram" /></a>
-              <a class="youtube" href="www.youtube.com" target="_blank"><img src="./Imagens/Vectorlogo--youtube.png" alt="logo youtube" /></a>
-              <a class="facebook" href="www.facebook.com" target="_blank"><img src="./Imagens/Vectorlogo--face.png" alt="logo facebook" /></a>
-            </div>
-            </div>
-            
-            <div class="newsletter">
-            <div class="texto--news">
-              <p>
-              Inscreva-se na nossa Newsletter e receba as nossas novidades em
-              primeira mão.
-            </p>
-            </div>
-            <div class="news--botao">
-              <input class="input--news" type="text" id="seu--email" placeholder="SEU E-MAIL" />
-              <button class="inscrever">
-              <label for="seu--email">INSCREVER-SE</label>
-              </button>
-            </div>
-        </div>
-          
-          </div>
-        
-        </div>
-      
-      
-        <p class="cnpj">
-          © 2022 CERVEJARIA GORÓ LTDA. 00.000.000/0001-00 | Rua dos Bobos, 0 -
-          Cidade, ES
-        </p>
-      </footer>
+				<div class="footer__inst">
+					<ul>
+						<h5>INSTITUCIONAL</h5>
+						<li>
+							<a href="../../index.html"> Home </a>
+						</li>
+						<li>
+							<a href="../../index.html#info--menu">
+								Portfólio
+							</a>
+						</li>
+						<li>
+							<a href="#"> Contato </a>
+						</li>
+						<li>
+							<a href="../../index.html#about"> Sobre nós </a>
+						</li>
+						<li>
+							<a href="../homeStore/homeStore.html"> loja </a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__legal">
+					<ul>
+						<h5>LEGAL</h5>
+						<li>
+							<a href="#"> Termos de uso </a>
+						</li>
+						<li>
+							<a href="#"> Política de privacidade </a>
+						</li>
+					</ul>
+
+					<div class="footer__redes">
+						<h5>REDES SOCIAIS</h5>
+						<ul class="footer__lista">
+							<li class="footer__item">
+								<a class="footer__link" href="#"
+									><img
+										class="redes__logo"
+										alt="Instagram"
+										src="../../../src/img/Instagram.png"
+								/></a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#"
+									><img
+										class="redes__logo"
+										alt="YouTube"
+										src="../../../src/img/YouTube.png"
+								/></a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#"
+									><img
+										class="redes__logo"
+										alt="Facebook"
+										src="../../../src/img/Facebook.png"
+								/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer__busca">
+					<p>
+						Inscreva-se na nossa Newsletter e receba as nossas
+						novidades em primeira mão.
+					</p>
+					<div class="busca__input">
+						<input type="text" placeholder="SEU E-MAIL" />
+						<button>INSCREVER-SE</button>
+					</div>
+				</div>
+			</div>
+
+			<p>
+				© 2022 CERVEJARIA GORÓ LTDA. 00.000.000/0001-00 | Rua dos Bobos,
+				0 - Cidade, ES
+			</p>
+		</footer>
     </div>
   </body>
 </html>
