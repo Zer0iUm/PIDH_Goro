@@ -118,21 +118,35 @@
 
 			<form class="form">
 				<div class="teste">
-					<input type="nome" placeholder="Nome" />
-					<input type="sobrenome" placeholder="Sobrenome" />
+					<input type="nome" placeholder="Nome" id="nome" />
+					<input
+						type="sobrenome"
+						placeholder="Sobrenome"
+						id="sobrenome"
+					/>
 				</div>
 				<div class="teste">
 					<input
 						type="dataNascimento"
 						placeholder="Data de Nascimento | 00/00/0000"
+						id="dataNascimento"
 					/>
-					<input type="genero" placeholder="Gênero | ex: Feminino" />
+					<input
+						type="genero"
+						placeholder="Gênero | ex: Feminino"
+						id="genero"
+					/>
 				</div>
 				<div class="teste">
-					<input type="CPF" placeholder="CPF | 000.000.000-00" />
+					<input
+						type="CPF"
+						placeholder="CPF | 000.000.000-00"
+						id="CPF"
+					/>
 					<input
 						type="telefoneContato"
 						placeholder="Telefone | (00) 00000-0000"
+						id="telefoneContato"
 					/>
 				</div>
 				<span class="form__erro">Mensagem de erro</span>
@@ -155,14 +169,14 @@
 
 			<form class="form">
 				<div class="teste">
-					<input type="email" placeholder="E-mail" />
+					<input type="email" placeholder="E-mail" id="email" />
 					<input
 						type="emailConfirmar"
 						placeholder="Confirme seu e-mail"
 					/>
 				</div>
 				<div class="teste">
-					<input type="senha" placeholder="Senha" />
+					<input type="senha" placeholder="Senha" id="senha" />
 					<input
 						type="senhaConfirmar"
 						placeholder="Confirme sua senha"
@@ -171,7 +185,7 @@
 			</form>
 		</section>
 
-		<section class="section__cadastro">
+		<section class="section__cadastro" style="margin-bottom: 4.5rem">
 			<div class="cadastro">
 				<div class="cadastro__titulo">
 					<img src="../../src/img/casa.svg" />
@@ -188,6 +202,11 @@
 			<form class="form">
 				<div class="teste">
 					<input type="cep" placeholder="CEP | 00000-000" />
+					<input
+						class="teste vazio"
+						aria-hidden="true"
+						disabled="disabled"
+					/>
 				</div>
 				<div class="teste">
 					<input type="cidade" placeholder="Cidade" />
@@ -202,7 +221,11 @@
 					<input type="bairro" placeholder="Bairro" />
 				</div>
 			</form>
-			<a class="cadastro__botao" href="#">CRIAR CONTA</a>
+			<div class="teste">
+				<button type="submit" class="cadastro__botao">
+					CRIAR CONTA
+				</button>
+			</div>
 		</section>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -236,21 +259,19 @@
 					<ul>
 						<h5>INSTITUCIONAL</h5>
 						<li>
-							<a href="../../index.html"> Home </a>
+							<a href="./index.html"> Home </a>
 						</li>
 						<li>
-							<a href="../../index.html#info--menu">
-								Portfólio
-							</a>
+							<a href="./index.html#info--menu"> Portfólio </a>
 						</li>
 						<li>
 							<a href="#"> Contato </a>
 						</li>
 						<li>
-							<a href="../../index.html#about"> Sobre nós </a>
+							<a href="./index.html#about"> Sobre nós </a>
 						</li>
 						<li>
-							<a href="../homeStore/homeStore.html"> loja </a>
+							<a href="./home-loja.html"> loja </a>
 						</li>
 					</ul>
 				</div>
@@ -314,5 +335,7 @@
 				0 - Cidade, ES
 			</p>
 		</footer>
+
+		<script src="cadastro.js"></script>
 	</body>
 </html>

@@ -35,22 +35,28 @@
 					/>
 				</a>
 				<ul class="menu__lista">
-					<li class="menu__item">
+					<li id="menuOne" class="menu__item">
 						<a
+							onmouseover="mouseOverMenu()"
+							onmouseout="mouseOutMenu()"
 							class="menu__linka"
 							href="../lists/listBeers/listBeer.html"
 							>CERVEJAS</a
 						>
 					</li>
-					<li class="menu__item">
+					<li id="menuTwo" class="menu__item">
 						<a
+							onmouseover="mouseOverMenuTwo()"
+							onmouseout="mouseOutMenuTwo()"
 							class="menu__linka"
 							href="../lists/listAcessories/index.html"
 							>ACESSÓRIOS</a
 						>
 					</li>
-					<li class="menu__item">
+					<li id="menuThree" class="menu__item">
 						<a
+							onmouseover="mouseOverMenuThree()"
+							onmouseout="mouseOutMenuThree()"
 							class="menu__linka"
 							href="../lists/listKits/index.html"
 							>KITS</a
@@ -61,8 +67,12 @@
 
 			<nav class="redes">
 				<ul class="menu__lista">
-					<li class="menu__item">
-						<a class="menu__link" href="../login/Login.html"
+					<li id="menuFour" class="menu__item">
+						<a
+							onmouseover="mouseOverMenuFour()"
+							onmouseout="mouseOutMenuFour()"
+							class="menu__link"
+							href="../login/Login.html"
 							><img
 								class="redes__logo"
 								alt="Login"
@@ -71,8 +81,12 @@
 							LOGIN
 						</a>
 					</li>
-					<li class="menu__item">
-						<a class="menu__link" href="../signUp/signUp.html"
+					<li id="menuFive" class="menu__item">
+						<a
+							onmouseover="mouseOverMenuFive()"
+							onmouseout="mouseOutMenuFive()"
+							class="menu__link"
+							href="../shoppingCart/shoppingCart.html"
 							><img
 								class="redes__logo"
 								alt="Carrinho"
@@ -480,7 +494,7 @@
 							<a href="../../index.html#about"> Sobre nós </a>
 						</li>
 						<li>
-							<a href="../homeStore/homeStore.html"> loja </a>
+							<a href="./homeStore.html"> loja </a>
 						</li>
 					</ul>
 				</div>
