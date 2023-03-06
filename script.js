@@ -54,7 +54,7 @@ function checkAge() {
 	const currentYear = new Date().getFullYear();
 	const year = document.getElementById('year').value;
 	const age = currentYear - year;
-	age > 18 ? closePopUp() : alert('Você não tem idade suficiente');
+	age >= 18 ? closePopUp() : alert('Você não tem idade suficiente');
 }
 
 /**********RESPONSIVIDADE MENU E MENU-BAR**************/
