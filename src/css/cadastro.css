@@ -86,7 +86,7 @@ input:disabled {
   /* padding: 1rem 1rem 1rem 8rem; */
 }
 
-.form input {
+.form input, select{
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -122,4 +122,9 @@ input:disabled {
   text-decoration: none;
   transition: 15ms;
   margin: 1rem;
+}
+
+.select{
+  padding: 1rem;
+  color: #acacac;
 }
