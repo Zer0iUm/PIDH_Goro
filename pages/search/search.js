@@ -46,3 +46,13 @@ const mouseOverMenuFive = function(){
 const mouseOutMenuFive = function(){
     menuFive.style.textDecoration = 'none';
 };
+
+
+
+
+function clickedImage(id){
+    document.getElementById('img-cerveja01').style.opacity = 1;
+
+    document.getElementById(id).style.opacity = 0.5;
+    
+}
