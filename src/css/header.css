@@ -57,6 +57,12 @@ a{
     padding-left: 3rem;
 }
 
+.menu__linka_hvr{
+    border-bottom: 5px solid #000000;
+}
+
+
+
 
 .menu__profile{
     padding-top: 0.5rem;

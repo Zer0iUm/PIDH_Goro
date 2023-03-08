@@ -121,3 +121,60 @@ const mouseOverMenuFive = () => {
 const mouseOutMenuFive = () => {
 	menuFive.style.textDecoration = 'none';
 };
+
+/***********Mouse event carrinho*****************/
+window.addEventListener('load', function() {
+
+	const btn_prt = document.querySelector('.botao_preto');
+  
+	btn_prt.addEventListener('mouseover', function() {
+	btn_prt.classList.add('hv_preto');
+  });
+  
+  btn_prt.addEventListener('mouseout', function() {
+	btn_prt.classList.remove('hv_preto');
+  });
+
+  const btn_ama = document.querySelector('.botao_amarelo');
+  
+  btn_ama.addEventListener('mouseover', function() {
+  btn_ama.classList.add('hv_amarelo');
+});
+
+btn_ama.addEventListener('mouseout', function() {
+  btn_ama.classList.remove('hv_amarelo');
+});
+
+const links_menu = document.querySelectorAll('.menu__linka');
+
+links_menu.forEach(link => {
+  link.addEventListener('mouseover', function() {
+    link.classList.add('menu__linka_hvr');
+  });
+  
+  link.addEventListener('mouseout', function() {
+    link.classList.remove('menu__linka_hvr');
+  });
+});
+
+const login = document.querySelector('.log');
+  
+login.addEventListener('mouseover', function() {
+	login.classList.add('menu__linka_hvr');
+});
+
+login.addEventListener('mouseout', function() {
+	login.classList.remove('menu__linka_hvr');
+});
+
+const carrin = document.querySelector('.car');
+  
+carrin.addEventListener('mouseover', function() {
+	carrin.classList.add('menu__linka_hvr');
+});
+
+carrin.addEventListener('mouseout', function() {
+	carrin.classList.remove('menu__linka_hvr');
+});
+
+  });
