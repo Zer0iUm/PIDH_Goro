@@ -14,87 +14,61 @@
     <title>Carrinho de compras</title>
 
 
+	<script
+			src="https://kit.fontawesome.com/8efdacdf0c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+    <title>Carrinho de compras</title>
+
+
 </head>
 
 <body>
-	<header class="cabecalho">
-		<nav class="menu">
-			<a class="menu__link" href="../homeStore/homeStore.html"
-				><img
-					class="logo"
-					alt="Logo Goró"
-					src="../../src/img/logo goro 1.png"
-				/>
-			</a>
-			<ul class="menu__lista">
-				<li class="menu__item">
-					<a
-						class="menu__linka"
-						href="../lists/listBeers/listBeer.html"
-						>CERVEJAS</a
-					>
+ <header class="cabecalho">
+    
+     <div class="menu">
+		<a class="menu__link" href="./homeStore.html">
+			<img class="logo" alt="Logo Goró" src="./img/logo goro 1.svg" >
+				</a>
+		<ul class="menu__lista">
+			<li class="menu__item">
+				<a class="menu__linka" href="../lists/listBeers/listBeer.html">CERVEJAS</a>
 				</li>
 				<li class="menu__item">
-					<a
-						class="menu__linka"
-						href="../lists/listAcessories/index.html"
-						>ACESSÓRIOS</a
-					>
+				<a class="menu__linka" href="../lists/listAcessories/index.html">ACESSÓRIOS</a>
 				</li>
 				<li class="menu__item">
-					<a class="menu__linka" href="../lists/listKits/index.html"
-						>KITS</a
-					>
+				<a class="menu__linka" href="../lists/listKits/index.html">KITS</a>
 				</li>
-			</ul>
-		</nav>
+		</ul>
+	</div>
+			<div>
+			<ul class="menu__profile">
+					<li class="log">
+					<img class="login" alt="login" src="./img/profile.svg">
+					<a class="login" href="../login/Login.htmlgit add">LOGIN</a>
+					</li>
 
-		<nav class="redes">
-			<ul class="menu__lista">
-				<li class="menu__item">
-					<a class="menu__link" href="../login/Login.html"
-						><img
-							class="redes__logo"
-							alt="Login"
-							src="../../src/img/login.svg"
-						/>
-						LOGIN
-					</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link" href="../shoppingCart/shoppingCart.html"
-						><img
-							class="redes__logo"
-							alt="Carrinho"
-							src="../../src/img/carrinho.svg"
-						/>
-						CARRINHO
-					</a>
-				</li>
-			</ul>
-
-			<div class="menu-bar">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+					<li class="car">
+					<img class="carrinho" alt="carrinho" src="./img/carrinho.svg">
+					<a class="carrinho" href="../shoppingCart/shoppingCart.html">CARRINHO</a>
+					</li>
+					
+				</ul>
 			</div>
-		</nav>
 	</header>
 
 	<section class="pesquisa">
-		<div class="pesquisa__container">
-			<input
-				class="pesquisa__input"
-				type="search"
-				placeholder="Buscar no site"
-			/>
+		<div class="barra_pesquisa">
+			<input class="pesquisa__input" type="search" id="busca" placeholder="Buscar no site"/>
 		</div>
 	</section>
 
 	<section class="carrinho_compra">
 		<div class="header_carrinho">
 			<div class="titulo_carrinho">
-				<img class="carrinho2" alt="carrinho" src="../../src/img/carrinho.svg">
+				<img class="carrinho2" alt="carrinho" src="./img/carrinho.svg">
 				<h1 class="titulos"> CARRINHO DE COMPRAS</h1>
 			</div>
 			<button class="botao_preto" type="button">CONTINUAR COMPRANDO</button>
@@ -132,9 +106,27 @@
 				<div class="carrinho_direita">
 				<div class="container">
 					<div class="row">
-					  <div class="col-md-12">
-						<button type="button" id="menos" onclick="less()"><i class="fa fa-minus-circle"aria-hidden="true">-</i></button> &nbsp; <input type="number" name="numero" id="num"> &nbsp; <button type="button" id="mais" onclick="more()">+<i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-					  </div>
+						<section id="mais_menos">
+							<div
+								class="btn-quantidade"
+								id="remover"
+								onclick="setQuantidade('remove')"
+							>
+								-
+							</div>
+							<input
+								id="input-quantidade"
+								type="text"
+								value="0"
+								min="0"
+							/>
+							<div
+								class="btn-quantidade"
+								id="adicionar"
+								onclick="setQuantidade('add')"
+							>
+								+
+							</div>
 					</div>
 				  </div>
 				<div class="valor_unitário">R$ 00,00</div>
@@ -153,9 +145,27 @@
 				<div class="carrinho_direita">
 				<div class="container">
 					<div class="row">
-					  <div class="col-md-12">
-						<button type="button" id="menos" onclick="less()"><i class="fa fa-minus-circle"aria-hidden="true">-</i></button> &nbsp; <input type="number" name="numero" id="num"> &nbsp; <button type="button" id="mais" onclick="more()">+<i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-					  </div>
+						<section id="mais_menos">
+							<div
+								class="btn-quantidade"
+								id="remover"
+								onclick="setQuantidade('remove')"
+							>
+								-
+							</div>
+							<input
+								id="input-quantidade"
+								type="text"
+								value="0"
+								min="0"
+							/>
+							<div
+								class="btn-quantidade"
+								id="adicionar"
+								onclick="setQuantidade('add')"
+							>
+								+
+							</div>
 					</div>
 				  </div>
 				<div class="valor_unitário">R$ 00,00</div>
@@ -174,9 +184,27 @@
 				<div class="carrinho_direita">
 				<div class="container">
 					<div class="row">
-					  <div class="col-md-12">
-						<button type="button" id="menos" onclick="less()"><i class="fa fa-minus-circle"aria-hidden="true">-</i></button> &nbsp; <input type="number" name="numero" id="num"> &nbsp; <button type="button" id="mais" onclick="more()">+<i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-					  </div>
+						<section id="mais_menos">
+							<div
+								class="btn-quantidade"
+								id="remover"
+								onclick="setQuantidade('remove')"
+							>
+								-
+							</div>
+							<input
+								id="input-quantidade"
+								type="text"
+								value="0"
+								min="0"
+							/>
+							<div
+								class="btn-quantidade"
+								id="adicionar"
+								onclick="setQuantidade('add')"
+							>
+								+
+							</div>
 					</div>
 				  </div>
 				<div class="valor_unitário">R$ 00,00</div>
@@ -186,7 +214,7 @@
 
 			<section class="frete">
 				<div class="titulo_frete">
-				<img class="caminhao" src="../../src/img/frete.svg">
+				<img class="caminhao" src="./img/frete.svg">
 				<h3 class="CEP">DIGITE O CEP DO ENDEREÇO DE ENTREGA</h3>
 				</div>
 				<div class="valor_frete">
@@ -218,7 +246,7 @@
 				<div class="alinhamento_botao">
 				<div></div>
 				<div>
-					<a href='../checkout/checkout.html' class="botao_amarelo" type="button">FINALIZAR COMPRA</a>
+					<button class="botao_amarelo" type="button">FINALIZAR COMPRA</button>
 				</div>
 			</div>
 			</div>
