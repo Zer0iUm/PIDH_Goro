@@ -57,11 +57,13 @@ a{
     padding-left: 3rem;
 }
 
-.menu__linka_hvr{
-    border-bottom: 5px solid #000000;
+.car, .log{
+    border-bottom: 5px solid transparent;
 }
 
-
+.menu__linka:hover, .car:hover, .log:hover{
+    border-bottom: 5px solid #000000;
+}
 
 
 .menu__profile{
