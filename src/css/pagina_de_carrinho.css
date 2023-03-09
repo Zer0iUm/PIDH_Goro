@@ -51,6 +51,7 @@ a{
 	width: 3rem;
 	font-size: 20px;
 	text-align: center;
+    border: 2px solid #000000;
 }
 
 .titulo_carrinho{
@@ -293,7 +294,7 @@ textarea:focus, input:focus {
 }
 
 .soma_carrinho{
-    margin: 2rem 24.5% 0.5rem 0%;
+    margin: 2rem 24.5% 4rem 0%;
     padding-right: 0rem;
     font-family: 'Lato';
     font-style: normal;
@@ -391,7 +392,7 @@ textarea:focus, input:focus {
     padding: 0% 2rem 0% 2rem;   
     border: none;
     justify-content: right;
-    margin: 6rem 0 2rem 25rem;
+    margin: 4rem 0 3rem 25rem;
 }
 
 .botao_amarelo:hover{
@@ -443,10 +444,7 @@ textarea:focus, input:focus {
     border: 1px solid #888888;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  

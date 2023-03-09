@@ -1,7 +1,7 @@
 footer {
   background-color: #f3f0eb;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   font-family: "Lato";
   color: #000000;
@@ -12,16 +12,18 @@ hr {
   margin: 0;
 }
 
+
 .amarelo {
-  border-top: 6px solid #f8a912;
+  border: 3px solid #f8a912;
+
 }
 
 .vermelho {
-  border-top: 6px solid #bd2d16;
+  border: 3px solid #bd2d16;
 }
 
 .preto {
-  border-top: 6px solid #1e0202;
+  border: 3px solid #1e0202;
 }
 
 .footer__container {
@@ -63,28 +65,36 @@ footer a:hover {
 }
 
 .footer__lista {
-  margin-top: 1rem;
+  
+  margin-top: 0.5rem;
   display: flex;
   align-items: flex-start;
 }
 
 .footer__item {
-  margin-right: 1rem;
+
+  margin-right: 0.5rem;
 }
 
-.footer__busca {
+.footer__email {
   text-align: left;
 }
 
-.busca__input {
+.email__input {
   width: 100%;
 }
+
+#email::placeholder{
+  color: #8d8d8d;
+}
+
+
 
 footer input {
   margin-top: 1rem;
   border: 2px solid #000000;
-  width: 40%;
-  padding: 1rem;
+  width: 70%;
+  padding: 0.7rem;
   background-color: #f3f0eb;
   margin-right: 0;
 }
@@ -92,7 +102,7 @@ footer input {
 footer button {
   background-color: #000000;
   color: #ffffff;
-  padding: 1rem;
+  padding: 0.7rem;
   margin-left: 0;
   cursor: pointer;
 }
@@ -139,21 +149,10 @@ footer button {
     margin-right: 1rem;
   }
 
-  .footer__busca {
+  .footer__email{
     text-align: left;
   }
 
-  .busca__input {
-    width: 100%;
-  }
-
-  footer input {
-    margin-top: 0.5rem;
-    border: 2px solid #000000;
-    width: 70%;
-    background-color: #f3f0eb;
-    margin-right: 0;
-  }
 
   footer button {
     background-color: #000000;
@@ -211,20 +210,8 @@ footer button {
     margin-right: 1rem;
   }
 
-  .footer__busca {
+  .footer__email {
     text-align: center;
-  }
-
-  .busca__input {
-    width: 100%;
-  }
-
-  footer input {
-    margin-top: 0.5rem;
-    border: 2px solid #000000;
-    width: 30%;
-    background-color: #f3f0eb;
-    margin-right: 0;
   }
 
   footer button {
@@ -240,3 +227,8 @@ footer button {
     text-align: center;
   }
 }
+
+#CNPJ{
+  margin-left: -19rem;
+}
+
