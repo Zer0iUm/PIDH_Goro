@@ -31,10 +31,6 @@ a{
 
 }
 
-#mais_menos {
-	display: flex;
-	flex-direction: row;
-}
 
 .btn-quantidade {
 	background-color: black;
@@ -55,6 +51,7 @@ a{
 	width: 3rem;
 	font-size: 20px;
 	text-align: center;
+    border: 2px solid #000000;
 }
 
 .titulo_carrinho{
@@ -91,7 +88,7 @@ a{
     padding: 0% 1.5rem 0% 1.5rem;    
 }
 
-.hv_preto{
+.botao_preto:hover{
 	background-color: grey;
     border:2px solid grey;
 	cursor: pointer;
@@ -141,7 +138,7 @@ textarea:focus, input:focus {
     list-style-type: none;
     align-items: center;
     color: #ffffff;
-    gap: 10rem;
+    gap: 7rem;
     
 }
 
@@ -165,6 +162,7 @@ textarea:focus, input:focus {
 }
 
 .carrinho_direita{
+  
     justify-content: center;
     display: flex;
     font-family: 'Lato';
@@ -175,7 +173,7 @@ textarea:focus, input:focus {
     list-style-type: none;
     align-items: center;
     color: #000000;
-    gap: 10rem;
+    gap: 8.5rem;
     
 }
 
@@ -183,6 +181,7 @@ textarea:focus, input:focus {
     display: flex;
     gap: 2rem;
     align-items: center;
+    
 }
 
 .foto_carrinho{
@@ -212,14 +211,27 @@ textarea:focus, input:focus {
     color: #8B8B8B;
 }
 
+#mais_menos {
+	display: flex;
+	flex-direction: row;
+
+}
+
+
 .valor_unitário{
     color: #838383;
     font-size: 20px;
+ 
 }
 
 .valor_total{
     color: #000000;
     font-size: 20px;
+ 
+}
+
+#valor_frete{
+    margin-left: 8rem;
 }
 
 .frete{
@@ -228,7 +240,7 @@ textarea:focus, input:focus {
     padding: 1.2rem 3rem 1.2rem 2rem;
     display:flex;
     align-items: center;
-    gap: 10%;
+    gap: 20rem;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -270,7 +282,6 @@ textarea:focus, input:focus {
 
 .valor_frete{
     
-    
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -283,19 +294,20 @@ textarea:focus, input:focus {
 }
 
 .soma_carrinho{
-    margin: 1rem 10% 0.5rem 10%;
-    justify-content: right;
+    margin: 2rem 24.5% 4rem 0%;
+    padding-right: 0rem;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 18px;
     max-width: 800px;
 }
 
 .subtotal{
+    padding: 0 2.5rem 0 2.5rem;
     display: flex;
-    gap:4rem;
+    gap: 15rem;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -305,7 +317,13 @@ textarea:focus, input:focus {
     justify-content: space-between;
 }
 
+
+#frete_valor2{
+    padding-top: 1.5rem;
+}
+
 .frete2{
+    padding: 0 2.5rem 0 2.5rem;
     display: flex;
     gap: 4rem;
     font-family: 'Lato';
@@ -318,13 +336,14 @@ textarea:focus, input:focus {
 }
 
 #linha-horizontal2{
-    width: 100%;
+    
     border-top: 3px solid #000000;
-    padding: 1rem 0 1rem 0;
+  
 
 }
 
 .total_compra{
+    padding: 2rem 2.5rem 0 2rem;
     display: flex;
     gap:4rem;
     font-family: 'Lato';
@@ -373,10 +392,10 @@ textarea:focus, input:focus {
     padding: 0% 2rem 0% 2rem;   
     border: none;
     justify-content: right;
-    margin: 6rem 0 2rem 0;
+    margin: 4rem 0 3rem 25rem;
 }
 
-.hv_amarelo{
+.botao_amarelo:hover{
 	background-color: rgb(197, 71, 33);
    	cursor: pointer;
 	user-select: none;
@@ -384,19 +403,16 @@ textarea:focus, input:focus {
 
 
 .fim_carrinho{
-    display: flex;
-    justify-content: space-between;
-
+    
+    margin-left: 68rem;
+    
+    
 }
 
 .espaco_total{
-    width: 200px;
+    width: 0px;
 }
 
-.alinhamento_botao{
-    display: flex;
- 
-}
 
 #menos{
     background-color: #000;
@@ -422,16 +438,13 @@ textarea:focus, input:focus {
     font-size: 15px;
     line-height: 30px;
     color: #ACACAC;
-    width: 305px;
+    width: 20rem;
     height: 36px;
     top: 1031px;
     border: 1px solid #888888;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  

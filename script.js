@@ -119,6 +119,7 @@ const mouseOutMenuFive = () => {
 	menuFive.style.textDecoration = 'none';
 };
 
+<<<<<<< HEAD
 /***********Mouse event carrinho*****************/
 window.addEventListener('load', function () {
 	const btn_prt = document.querySelector('.botao_preto');
@@ -173,3 +174,5 @@ window.addEventListener('load', function () {
 		carrin.classList.remove('menu__linka_hvr');
 	});
 });
+=======
+>>>>>>> cfbfe01029a5b05cf09d6c67b218317c36913ba6
